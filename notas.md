@@ -1,7 +1,7 @@
-### Aspectos técnicos del proceso
+## Aspectos técnicos del proceso
 
 
-## Proceso de traducción
+### Proceso de traducción
 
 Cada archivo original de traducción (.csv) se ha convertido a un formato
 de hoja de cálculo OpenDocument (.ods) para facilitar su edición. Se
@@ -12,7 +12,8 @@ columna al final donde se copian las cadenas de las traducciones
 originales de las cadenas que han sido cambiadas.
 
 Una idea para realizar la edición de la traducción es la siguiente.
-Mantener abiertos los siguientes elementos:
+
+Deben mantenerse abiertos los siguientes elementos:
 
 - El sistema Frappé + ERPNext en alguna ventana de navegador (browser).
 - Editor de código (p.ej. Sublime Text), con acceso a todo el árbol del
@@ -21,24 +22,33 @@ Mantener abiertos los siguientes elementos:
   edición.
 - Este archivo (`notas.md`).
 
-La traducción se debe editar en el archivo .ods, mientras se buscan
-referencias contextuales en la aplicación y/o código fuente. Además,
-es conveniente tomar nota de cualquier decisión o nomenclatura que se
+La traducción se debe editar en el archivo .ods mientras se buscan
+referencias contextuales en la aplicación (navegador) y/o código fuente.
+El archivo de hoja de cálculo puede ordenarse por la 2a. columna (que
+contiene la referencia de origen de la cadena a traducir) para
+facilitar la traducción de secciones similares (p.ej. de un mismo
+formulario o DocType).
+
+Es conveniente tomar nota de cualquier decisión o nomenclatura que se
 establezca durante la traducción para mantener una consistencia de
 la edición de la misma; para eso se puede utilizar este archivo de notas
-en las secciones posteriores (Consideraciones y Vocabulario).
+en las secciones posteriores de este documento
+([Consideraciones](#consideraciones-generales) y
+[Vocabulario](#vocabulario-establecido)).
 
 
-## Pruebas de traducción generada
+### Pruebas de traducción generada
 
-Por definir...
+Nota: Debería buscarse la manera de automatizar la generación de los
+archivos de salida correspondientes (`es-MX.csv`) mediante algún
+script en Python.
 
 ---
 
-### Observaciones de la traducción
+## Observaciones de la traducción
 
 
-## Consideraciones generales
+### Consideraciones generales
 
 - Debe evitarse utilizar mayúsculas iniciales en la medida de lo posible;
   a menos que se trate de términos estándares o técnicos (p.ej. DocType,
@@ -49,7 +59,7 @@ Por definir...
   originales ( en inglés) tienen mezcladas las dos formas.
 
 
-## Vocabulario establecido
+### Vocabulario establecido
 
 - Log = registro
 - Desk = escritorio
