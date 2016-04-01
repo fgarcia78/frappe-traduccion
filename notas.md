@@ -50,6 +50,17 @@ script en Python.
 
 ### Consideraciones generales
 
+- El establecimiento del [vocabulario establecido](#vocabulario-establecido)
+  debe ser un lineamiento general de las traducciones; sin embargo, no debería
+  tratarse como una regla estricta para generar las traducciones; es decir: en
+  algunas situaciones es probable que puedan usarse sinónimos para
+  evitar la monotonía del texto. Como ejemplo de lo anterior tenemos la
+  siguiente frase: "Permission at level 0 must be *set* before higher levels
+  are *set*", la cual puede traducirse así: "Los permisos de nivel 0 deben
+  *establecerse* antes de *definir* niveles más altos". La palabra "set" se
+  traduce en la frase como "establecerse" y "definirse" (sinónimo), a pesar
+  de que el vocabulario la define como "establecer".
+
 - Debe evitarse utilizar mayúsculas iniciales en la medida de lo posible;
   a menos que se trate de términos estándares o técnicos (p.ej. DocType,
   Javascript).
@@ -57,6 +68,10 @@ script en Python.
 - En las descripciones de item en los archivos de configuración de módulos
   (métodos `get_data()`) se dejarán con punto al final. En las descripciones
   originales ( en inglés) tienen mezcladas las dos formas.
+
+- En los mensajes de error o excepción (lanzados mediante `frappe.throw()`)
+  se manejarán sin punto final. En los mensajes originales están mezcladas
+  las dos formas.
 
 
 ### Vocabulario establecido
@@ -69,7 +84,7 @@ script en Python.
 - Script = script
 - Background = segundo plano
 - Developer = desarrollador
-- Set = establecer
+- Set = establecer / definir
 - Bulk = masivo/a
 - Item = elemento / artículo / registro
 - Upload = cargar
@@ -83,4 +98,44 @@ script en Python.
 - Report = reporte
 - Settings = configuración
 - Scheduler = planificador
+- Child = dependiente
+- Sorry = lo sentimos
+- Login, logged in = inicio de sesión, iniciar sesión
+- Find = localizar
+- Everyone = todos
+- Serie = secuencia, secuencias
+- Merge = fusionar
+- Row = renglón
+- Fieldname = nombre del campo
+- Link = enlace
+- Currency = moneda
+- Check (sustantivo) = Verificación
+- Fieldtype = tipo de campo
+- Fold = repliegue
+- Form = formulario
+- Pattern = patrón
+- Enter = ingresar
+- Read = leer
+- Write = escribir
+- Create = crear
+- Delete = borrar
+- Submit = aprobar
+- Cancel = cancelar
+- Amend = corregir
+- Report (permiso) = generar reporte
+- Export = exportar
+- Import = importar
+- Share = compartir
+- Print = imprimir
+- Email (permiso) = enviar por email
+
+
+### Observaciones del archivo .csv (bugs, inconsistencias)
+
+- Casi todas las cadenas para `apps/frappe/frappe/config/website.py` tienen
+  mal definido el número de línea al que hacen referencia en el archivo
+  de código correspondiente (`website.py`).
+
+- No existe la entrada `apps/frappe/frappe/core/doctype/doctype/doctype.py +478`.
+  La cadena original dice: "Apply User Permissions".
 
