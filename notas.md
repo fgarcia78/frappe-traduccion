@@ -136,6 +136,8 @@ script en Python.
 - Disable = deshabilitar
 - Enable = habilitar
 - Script = script
+- Post = publicación
+- Refresh = actualizar
 
 
 ### Observaciones de archivos de origen (bugs, inconsistencias)
