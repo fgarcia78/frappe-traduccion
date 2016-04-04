@@ -128,9 +128,35 @@ script en Python.
 - Share = compartir
 - Print = imprimir
 - Email (permiso) = enviar por email
+- Folder = carpeta
+- Mandatory = obligatorio
+- Home (file list) = inicio
+- Attachments (file list) = adjuntos
+- Administrator (user) = usuario administrador
+- Disable = deshabilitar
+- Enable = habilitar
+- Script = script
 
 
-### Observaciones del archivo .csv (bugs, inconsistencias)
+### Observaciones de archivos de origen (bugs, inconsistencias)
+
+#### Notas generales
+
+- Existen cadenas que no han sido integradas a los archivos .csv
+  pero sí se generan en los archivos de código (llaman a la función de
+  traducción de frappé: `frappe._()`). Después de traducir los archivos
+  originales, deben buscarse dichas cadenas; es probable que exista un
+  proceso (script) automatizado para hacer tal cosa.
+
+- Algunas secciones se refieren a cadenas integradas en archivos
+  de código correspondientes a pruebas unitarias. Es probable que
+  dichas pruebas no se comporten correctamente, porque aparentemente
+  no se tuvo el cuidado de usar la función de traducción de frappé
+  en todas esas cadenas; por lo que las llamadas a las funciones de
+  prueba (`Assert`) podrían retornar valores inválidos.
+
+
+#### App Frappé (`apps/frappe/translations/es.csv`)
 
 - Casi todas las cadenas para `apps/frappe/frappe/config/website.py` tienen
   mal definido el número de línea al que hacen referencia en el archivo
