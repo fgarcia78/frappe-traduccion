@@ -73,6 +73,9 @@ script en Python.
   se manejarán sin punto final. En los mensajes originales están mezcladas
   las dos formas.
 
+- No usar punto final en los subtítulos de encabezados en secciones ni en
+  las descripciones de opciones tipo verificación (check).
+
 
 ### Vocabulario establecido
 
@@ -138,6 +141,8 @@ script en Python.
 - Script = script
 - Post = publicación
 - Refresh = actualizar
+- Naming series = secuencias de identificación
+- Desktop = escritorio
 
 
 ### Observaciones de archivos de origen (bugs, inconsistencias)
