@@ -122,6 +122,7 @@ script en Python.
 - Write = escribir
 - Create = crear
 - Delete = borrar
+- Remove = quitar
 - Submit = aprobar
 - Cancel = cancelar
 - Amend = corregir
@@ -143,6 +144,8 @@ script en Python.
 - Refresh = actualizar
 - Naming series = secuencias de identificación
 - Desktop = escritorio
+- Start = comenzar / iniciar
+- Reset = restablecer
 
 
 ### Observaciones de archivos de origen (bugs, inconsistencias)
