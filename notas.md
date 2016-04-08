@@ -146,6 +146,7 @@ script en Python.
 - Desktop = escritorio
 - Start = comenzar / iniciar
 - Reset = restablecer
+- Publisher = editor
 
 
 ### Observaciones de archivos de origen (bugs, inconsistencias)
