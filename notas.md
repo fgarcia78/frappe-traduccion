@@ -166,12 +166,33 @@ script en Python.
   prueba (`Assert`) podrían retornar valores inválidos.
 
 
-#### App Frappé (`apps/frappe/translations/es.csv`)
+#### Incidencias en archivos .csv
 
-- Casi todas las cadenas para `apps/frappe/frappe/config/website.py` tienen
-  mal definido el número de línea al que hacen referencia en el archivo
-  de código correspondiente (`website.py`).
+- App Frappé (`apps/frappe/translations/es.csv`)
 
-- No existe la entrada `apps/frappe/frappe/core/doctype/doctype/doctype.py +478`.
-  La cadena original dice: "Apply User Permissions".
+  - Casi todas las cadenas para `apps/frappe/frappe/config/website.py` tienen
+    mal definido el número de línea al que hacen referencia en el archivo
+    de código correspondiente (`website.py`).
+
+  - No existe la entrada `apps/frappe/frappe/core/doctype/doctype/doctype.py +478`.
+    La cadena original dice: "Apply User Permissions".
+
+
+#### Incidencias en archivos de código origen
+
+- Archivo `/frappe/frappe/custom/doctype/customize_form/customize_form.js`
+
+  - En la línea 128 no se está traduciendo la cadena "Reset to defaults", que es
+    el título de una ventana emergente. Debería incluirse.
+
+  - La línea 179 se está dividiendo (porque es una definición completa de una
+    cadena que será "pintada" en HTML) y tiene la definición de una cadena a
+    traducir; dicha cadena incluye el caracter de nueva línea en javascript "\"
+    y la cadena no se encuentra en el diccionario. Debe corregirse el archivo
+    .js y todos los .csv (para eliminar dicho caracter).
+
+  - La oración que inicia en la línea 227 no se está traduciendo (es una cadena
+    que inicia con "Show field if a condition..."). Debe indicarse una llamada
+    a la función __() y también agregar la traducción a los archivos .csv.
+
 
